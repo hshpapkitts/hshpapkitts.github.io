@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+  <title>
+    Services
+  </title>
+
+<link rel="icon" href="https://lh3.googleusercontent.com/-T-ouPHSaeWU/Wo4RZJ8AVdI/AAAAAAAAAD4/PfGFXFCYKAQlNQBEPDjI93eOur0xEZG2QCEwYBhgL/w140-h140-p/cca.png" sizes="16x16">
+<body>
+
+  <img class="img-responsive" src="../img/service.jpg" alt="Job Opening Door" style="width:49%;height:400px;">
+
+          <style>
+      .but1{
+         font-size:170%;
+     }
+       li{
+    font-size:150%;
+    }
+     p{
+    font-size:150%;
+    }
+h2 {
+text-decoration-color: #cccccc;
+  text-decoration-line: overline;
+font-weight: 600;
+  font-family:Helvetica;
+}
+body {
+  background-color: #DADADA;
+}
+.button5 {background-color: #008CBA;
+  border: none;
+    color: white;
+    padding: 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: all 0.5s;
+    cursor: pointer;
+      width: 14vw;
+    } /* Blue Buttons*/
+
+  .button5:hover {
+      background-color:#005a77
+    }
+h1{
+  font-size: 200%;
+  text-align: center;
+  font-family:Helvetica;
+}
+li{font-weight: 500;
+ font-size: 150%;}
+body{background-color:F4F4F4;
+  font-family:Helvetica;
+}
+  p{
+    font-family:Helvetica;
+  }
+           li{
+    font-family:Helvetica;
+  }
+  img {
+    border-radius: 10px;
+}
+</style>
+    <style>
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+    <h1> Our Services
+</h1>
+<p> </p>
+<button class="accordion"><span class="but1">Bookkeeping
+
+</span></button>
+<div class="panel">
+  <h1> Bookkeeping </h1>
+<p> We will do the recording of financial transactions. Transactions include purchases, sales, receipts, and payments by an individual person or an organization/corporation. </p>
+</div>
+
+<button class="accordion"><span class="but1">Taxes
+
+    </span></button>
+<div class="panel">
+  <h1>Taxes</h1>
+<p>We will do your taxes to ensure that you get the most back that you possibly can.</p>
+</div>
+
+    <button class="accordion"><span class="but1">Audits
+
+
+</span>
+</button>
+<div class="panel">
+  <h1>
+  Audits
+  </h1>
+  <p> Getting audited by the IRS and need expert help, don't worry about it, here at Accuracy we have you covered. </p>
+</div>
+ <button class="accordion"><span class="but1">Annual Reports
+
+</span>
+</button>
+<div class="panel">
+  <h1> Annual Reports
+</h1>
+<p> Need to keep your company's yearly report to shareholders, and document its activities and finances throughout the previous financial year, we at Accuracy once again have you covered. </p>
+</div>
+
+<center>
+<form action="../index.html" id="index"></form>
+<form action="staff.html" id="page3"></form>
+<button type="submit" class="button button5"style="vertical-align:middle" form="index">Home</button>
+<button type="submit" class="button button5"style="vertical-align:middle" form="page3"><span>Our Staff</span></button>
+</center>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>

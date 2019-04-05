@@ -1,570 +1,565 @@
 <!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="https://lh3.googleusercontent.com/-T-ouPHSaeWU/Wo4RZJ8AVdI/AAAAAAAAAD4/PfGFXFCYKAQlNQBEPDjI93eOur0xEZG2QCEwYBhgL/w140-h140-p/cca.png" sizes="16x16">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+	background-color: orange;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid red;
+  border-bottom: 16px solid yellow;
+  border-left: 16px solid green;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+h1 {
+    text-align: center;
+
+}
+
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+<h1 id="loaderw"> Welcome to Accuracy </h1>
+<div id="loader"></div>
+
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
+	<link rel="icon" href="https://lh3.googleusercontent.com/-T-ouPHSaeWU/Wo4RZJ8AVdI/AAAAAAAAAD4/PfGFXFCYKAQlNQBEPDjI93eOur0xEZG2QCEwYBhgL/w140-h140-p/cca.png" sizes="16x16">
 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>US Govt. Questions</title>
+    <title>Accuracy Accounting</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Custom Fonts -->
+    <link href="css/fastyle.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- Custom styles for this template -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-  </head>
+</head>
 
-  <body>
+<body>
 
     <!-- Navigation -->
-    <!-- Page Header -->
-    <header class="masthead" style="background-image: url('img/home-bg.png')">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="site-heading">
-              <h2>Expressed v. Implied Powers</h2>
-              <span class="subheading">US Government AP</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Main Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="post-preview">
-            <!--Questions-->
-            <h5> Topic 1: Punish Tax Evaders <br> Topic 2: Regulate certain things (alcohol) and outlaw others (narcotics) <br> Topic 3: Requires states to meet certain conditions to get federal funding. </h5>
-            <h3>
-                Question #1: Determine is this within the 'spirit' of the constitution.
-              </h3>
-              <!--Question 1 End-->
-            <!--Div Junk-->
-             <div class="clearfix float-my-children">
-     <img src='img/C571B4F0-543A-48B1-8181-1D43A09727BA.jpeg'   width: 100%, height: "400px">
-      <div> Topic 1 Answer: Yes it was.</div>
-    </div>
-            <div class="clearfix float-my-children">
-     <img src='img/1789CA08-54C8-4B12-948F-4E30398399DC.jpeg'  width: 100%, height: "400px">
-      <div> Topic 2 Answer: No it was not.</div>
-    </div>
-            <div class="clearfix float-my-children">
-           <div> Topic 3 Answer: Yes it was.</div> </div>     <br>  <h3>     Question #2: What's next?        </h3>
-           
-              <!--Question 1 End-->
-             <h4>
-                Topic 1 Answer: Making the punishments even worse than they already are.
-            </h4>
-             <img src='img/379D08B5-FCA0-4393-A9D7-CF1C5F35D67B.jpeg'   width: 100%, height: "400px">
-              <h4>
-                Topic 2 Answer: Increase the taxes on these products so much until people just won't buy it. 
-              </h4>
-             <img src="http://blog.turbotax.intuit.com/wp-content/uploads/2011/07/110729-tt-cig-4.png" width: 100%, height: "400px">
-              <h4>
-                Topic 3 Answer: Make the conditions so strict so they're doing EXACTLY what you want them to do.
-              </h4>
-          <img src="https://www.azquotes.com/picture-quotes/quote-i-do-not-believe-that-the-government-is-in-any-position-to-say-exactly-how-every-single-dixie-lee-ray-96-52-26.jpg" width: 100%, height: "400px">
-               <br>                
-              </h3>
-           
-              <!--Question 1 End-->
-          <h3> Question 3: What is too far?</h3>
-             <h4>
-                Topic 1 Answer: Considering it treasonous. <br> Considering someone a tax evader if they were like a few dollars short on their tax payments.
-            </h4>
-             <img src="https://pbs.twimg.com/media/C2nv1UJUoAEFrzg.jpg">
-
-              <h4>
-                Topic 2 Answer: Considering it treasonous. <br> Banning it because they can't make money off of it (what they partially already did).
-              </h4>
-        
-             <img src="https://turtleboysports.com/wp-content/uploads/2017/06/Arizona-Marijuana-Advocates-Advance-2016-Initiative-Weedist.jpg" >
-              
-<h4>
-                Topic 3 Answer: Putting in so many unfunded mandates to the point where it is costing the states money to do something they 
-              </h4>
-       <img src="https://www.americanactionforum.org/wp-content/uploads/2016/10/101-Unfunded-Mandates-1-1024x780.png" <br>
-
-              <!--Question 3 End-->
 
 
-    <hr>
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Accuracy</h1>
+                        <h3>Accounting</h3>
+                        <hr class="intro-divider">
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+			    <ul class="list-inline intro-social-buttons"></ul>
+
+        <a href="mailto:accuracyci@gmail.com" class="fa fa-envelope-o"></a>
+<a href="https://twitter.com/accuracyci" class="fa fa-twitter"></a>
+
+<a href="https://www.youtube.com/channel/UCGT8AW_iCwTYM7fq1yemWnA?S" class="fa fa-youtube"></a>
 <style>
-body {
-  font-size: 20px;
-  color: #212529;
-  font-family: 'Lora', 'Times New Roman', serif;
+
+.fa {
+    display: inline;
+    padding: 1vw;
+    font-size: 2vw;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 100vw 1vw;
+    border-radius: 50%;
 }
 
-p {
-  line-height: 1.5;
-  margin: 30px 0;
+.fa:hover {
+    opacity: 0.7;
 }
 
-p a {
-  text-decoration: underline;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 800;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #212529;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-a:focus, a:hover {
-  color: #0085A1;
-}
-
-blockquote {
-  font-style: italic;
-  color: #868e96;
-}
-
-.section-heading {
-  font-size: 36px;
-  font-weight: 700;
-  margin-top: 60px;
-}
-
-.caption {
-  font-size: 14px;
-  font-style: italic;
-  display: block;
-  margin: 0;
-  padding: 10px;
-  text-align: center;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-::-moz-selection {
-  color: #fff;
-  background: #0085A1;
-  text-shadow: none;
-}
-
-::selection {
-  color: #fff;
-  background: #0085A1;
-  text-shadow: none;
-}
-
-img::selection {
-  color: #fff;
-  background: transparent;
-}
-
-img::-moz-selection {
-  color: #fff;
-  background: transparent;
-}
-
-#mainNav {
-  position: absolute;
-  border-bottom: 1px solid #e9ecef;
-  background-color: white;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-#mainNav .navbar-brand {
-  font-weight: 800;
-  color: #343a40;
-}
-
-#mainNav .navbar-toggler {
-  font-size: 12px;
-  font-weight: 800;
-  padding: 13px;
-  text-transform: uppercase;
-  color: #343a40;
-}
-
-#mainNav .navbar-nav > li.nav-item > a {
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-@media only screen and (min-width: 992px) {
-  #mainNav {
-    border-bottom: 1px solid transparent;
-    background: transparent;
-  }
-  #mainNav .navbar-brand {
-    padding: 10px 20px;
-    color: #fff;
-  }
-  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: rgba(255, 255, 255, 0.8);
-  }
-  #mainNav .navbar-nav > li.nav-item > a {
-    padding: 10px 20px;
-    color: #fff;
-  }
-  #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-    color: rgba(255, 255, 255, 0.8);
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  #mainNav {
-    -webkit-transition: background-color 0.2s;
-    -moz-transition: background-color 0.2s;
-    transition: background-color 0.2s;
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-  }
-  #mainNav.is-fixed {
-    /* when the user scrolls down, we hide the header right above the viewport */
-    position: fixed;
-    top: -67px;
-    -webkit-transition: -webkit-transform 0.2s;
-    -moz-transition: -moz-transform 0.2s;
-    transition: transform 0.2s;
-    border-bottom: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  #mainNav.is-fixed .navbar-brand {
-    color: #212529;
-  }
-  #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-    color: #0085A1;
-  }
-  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
-    color: #212529;
-  }
-  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #0085A1;
-  }
-  #mainNav.is-visible {
-    /* if the user changes the scrolling direction, we show the header */
-    -webkit-transform: translate3d(0, 100%, 0);
-    -moz-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-}
-
-header.masthead {
-  margin-bottom: 50px;
-  background: no-repeat center center;
-  background-color: #868e96;
-  background-attachment: scroll;
-  position: relative;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-header.masthead .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #212529;
-  opacity: 0.5;
-}
-
-header.masthead .page-heading,
-header.masthead .post-heading,
-header.masthead .site-heading {
-  padding: 200px 0 150px;
+.fa-facebook {
+  background: #3B5998;
   color: white;
 }
 
-@media only screen and (min-width: 768px) {
-  header.masthead .page-heading,
-  header.masthead .post-heading,
-  header.masthead .site-heading {
-    padding: 200px 0;
-  }
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
 
-header.masthead .page-heading,
-header.masthead .site-heading {
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+  .fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-envelope-o {
+  background: #cc2626;
+  color: white;
+}
+
+ @media only screen and (max-aspect-ratio: 1.6) {
+    .fa{display: inline;
+    padding: 4vw;
+    font-size: 4vw;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 1vw 2vw;
+  border-radius: 50%;}
+
+  }
+</style>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+	    <!--dropdown-->
+  <h2 id="thanky"> </h2>
+
+	<!--/dropdown-->
+	<a  name="services"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Services We Offer</h2>
+                    <p class="lead">Bookkeping, taxes, audits...</p>
+                    <form action="pages/services.html">
+                    <button type="submit" class="button button5"style="vertical-align:middle"><span>Read more</span></button>
+                  </form>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/service.jpg" alt="Job Opening Door" style="width:500px;height:400px;">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Our Staff Information</h2>
+                    <p class="lead">Here at Accuracy we have a very diverse group of Accuracians.</p>
+                    <form action="pages/staff.html">
+                    <button type="submit" class="button button5"style="vertical-align:middle"><span>Read more</span></button>
+                  </form>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/staff.jpg" alt="follow-ups">
+
+                  </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Customer Service</h2>
+                    <p class="lead">Use this page to find out about our Customer Service Information.</p>
+                    <form action="pages/customerservice.html">
+                    <button type="submit" class="button button5"style="vertical-align:middle"><span>Read more</span></button>
+                  </form>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/customerservice.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /. 4th Container -->
+		<div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Mission Statement and Company History</h2>
+                    <p class="lead">Use this page to find out about our Mission Statement and our Company History.</p>
+                    <form action="pages/mission.html">
+                    <button type="submit" class="button button5"style="vertical-align:middle"><span>Read more</span></button>
+                  </form>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/mission.jpg" alt="follow up">
+
+                  </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+		<div class="content-section-a">
+
+				<div class="container">
+
+						<div class="row">
+								<div class="col-lg-5 col-sm-6">
+										<hr class="section-heading-spacer">
+										<div class="clearfix"></div>
+										<h2 class="section-heading">Pricing</h2>
+										<p class="lead">This page is for find out our pricing and rates.</p>
+										<form action="pages/pricing.html">
+										<button type="submit" class="button button5"style="vertical-align:middle"><span>Read more</span></button>
+									</form>
+								</div>
+								<div class="col-lg-5 col-lg-offset-2 col-sm-6">
+										<img class="img-responsive" src="img/pricing.jpg" alt="">
+
+									</div>
+						</div>
+
+				</div>
+				<!-- /.container -->
+
+		</div>
+		<!-- /.content-section-b -->
+
+
+
+<!-- /. 5th Container -->
+
+    <br>
+    <a name="Developers"></a>
+    <h3> Miscellaneous </h3>
+
+
+
+
+
+
+		<!--developer Page-->
+            <form action="SiteMap.html">
+                    <button type="submit" id="button" class="button button5"style="vertical-align:middle"><span>Site Map</span></button>
+                  </form>
+             <br>
+	<!--Copyright Page-->
+		  <form action="Copyright_Page.html">
+                    <button type="submit" id="button"class="button button5"style="vertical-align:middle"><span>Copyright Page</span></button>
+                  </form>
+									<br>
+
+
+							<form action="FAQs.html">
+						<button type="submit" id="button"class="button button5"style="vertical-align:middle"><span>Frequently Asked Questions</span></button>
+					</form>
+					<form action="interactivecalendar.html">
+		                    <button type="submit" id="button"class="button button5"style="vertical-align:middle"><span>Calendar</span></button>
+		                  </form>
+					<form action="application.html">
+		                    <button type="submit" id="button"class="button button5"style="vertical-align:middle"><span>Apply For Work</span></button>
+		                  </form>
+											<br>
+                                  <!-- Developers ^ -->
+                    </div>
+                </div>
+
+            </div>
+
+    	</div>
+    </div>
+
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+<style>
+	#none{
+text-decoration: none;
+color: black;
+}
+#button{
+border-radius: 20px;
+	}
+h1 {
+  color:black;
+  font-weight:bold;
+  font-family: "Arial Black", Times, serif;
+}
+h5 {color:black;
+font-weight:bold;
+font-family: "Arial Black", Times, serif;}
+h3 {
+  color:black;
+  font-weight:bold;
+  font-family: "Arial Black", Times, serif;
+}
+	#thanky{
+		backgorund-color: #e7e7e7 ;
+
+	}
+.button5 {background-color: #008CBA;
+  border: none;
+    color: white;
+    padding: 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: all 0.5s;
+    cursor: pointer;} /* Blue Buttons*/
+    .button5:hover {
+      background-color:#005a77
+    }
+    .button5:active {
+  background-color: #005a77;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+    .button5 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button5 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button5:hover span {
+  padding-right: 25px;
+}
+.button5:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+	.img5 {
+  height: 200px;
+}
+	img {
+    transition: .5s ease;
+    border-radius: 10px;
+    height: auto;
+}
+
+
+div.container {
+      display:inline-block;
+    }
+    .navbar-default {
+
+
+	    background: radial-gradient(#e2e2e2 25%, #e2e2e2 45%, #c4c4c4 90%);
+    }
+    h2 {color:black;
+    font-weight:bold;
+    text-align: center;
+    font-family: "Arial Black", Times, serif;}
+/*blur*/
+	.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-
-header.masthead .page-heading h1,
-header.masthead .site-heading h1 {
-  font-size: 50px;
-  margin-top: 0;
+.container3:hover #hiy03 {
+  opacity: 0.8;
+}
+.container2:hover #hiy02 {
+  opacity: 0.8;
 }
 
-header.masthead .page-heading .subheading,
-header.masthead .site-heading .subheading {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 1.1;
-  display: block;
-  margin: 10px 0 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.container1:hover #hiy01 {
+  opacity: 0.8;
 }
-
-@media only screen and (min-width: 768px) {
-  header.masthead .page-heading h1,
-  header.masthead .site-heading h1 {
-    font-size: 80px;
-  }
-}
-
-header.masthead .post-heading h1 {
-  font-size: 35px;
-}
-
-header.masthead .post-heading .meta,
-header.masthead .post-heading .subheading {
-  line-height: 1.1;
-  display: block;
-}
-
-header.masthead .post-heading .subheading {
-  font-size: 24px;
-  font-weight: 600;
-  margin: 10px 0 30px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-header.masthead .post-heading .meta {
-  font-size: 20px;
-  font-weight: 300;
-  font-style: italic;
-  font-family: 'Lora', 'Times New Roman', serif;
-}
-
-header.masthead .post-heading .meta a {
-  color: #fff;
-}
-
-@media only screen and (min-width: 768px) {
-  header.masthead .post-heading h1 {
-    font-size: 55px;
-  }
-  header.masthead .post-heading .subheading {
-    font-size: 30px;
-  }
-}
-
-.post-preview > a {
-  color: #212529;
-}
-
-.post-preview > a:focus, .post-preview > a:hover {
-  text-decoration: none;
-  color: #0085A1;
-}
-
-.post-preview > a > .post-title {
-  font-size: 30px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.post-preview > a > .post-subtitle {
-  font-weight: 300;
-  margin: 0 0 10px;
-}
-
-.post-preview > .post-meta {
-  font-size: 18px;
-  font-style: italic;
-  margin-top: 0;
-  color: #868e96;
-}
-
-.post-preview > .post-meta > a {
-  text-decoration: none;
-  color: #212529;
-}
-
-.post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
-  text-decoration: underline;
-  color: #0085A1;
-}
-
-@media only screen and (min-width: 768px) {
-  .post-preview > a > .post-title {
-    font-size: 36px;
-  }
-}
-
-.floating-label-form-group {
-  font-size: 14px;
-  position: relative;
-  margin-bottom: 0;
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid #dee2e6;
-}
-
-.floating-label-form-group input,
-.floating-label-form-group textarea {
-  font-size: 1.5em;
-  position: relative;
-  z-index: 1;
-  padding: 0;
-  resize: none;
-  border: none;
-  border-radius: 0;
-  background: none;
-  box-shadow: none !important;
-  font-family: 'Lora', 'Times New Roman', serif;
-}
-
-.floating-label-form-group input::-webkit-input-placeholder,
-.floating-label-form-group textarea::-webkit-input-placeholder {
-  color: #868e96;
-  font-family: 'Lora', 'Times New Roman', serif;
-}
-
-.floating-label-form-group label {
-  font-size: 0.85em;
-  line-height: 1.764705882em;
-  position: relative;
-  z-index: 0;
-  top: 2em;
-  display: block;
-  margin: 0;
-  -webkit-transition: top 0.3s ease, opacity 0.3s ease;
-  -moz-transition: top 0.3s ease, opacity 0.3s ease;
-  -ms-transition: top 0.3s ease, opacity 0.3s ease;
-  transition: top 0.3s ease, opacity 0.3s ease;
-  vertical-align: middle;
-  vertical-align: baseline;
-  opacity: 0;
-}
-
-.floating-label-form-group .help-block {
-  margin: 15px 0;
-}
-
-.floating-label-form-group-with-value label {
-  top: 0;
+.container3:hover .middle {
   opacity: 1;
 }
-.floating-label-form-group-with-focus label {
-  color: #0085A1;
+	.container2:hover .middle {
+  opacity: 1;
+}
+	.container1:hover .middle {
+  opacity: 1;
+}
+	/*new*/
+
+#thanksd:link {
+    text-decoration: none;
+    color:black;
 }
 
-form .form-group:first-child .floating-label-form-group {
-  border-top: 1px solid #dee2e6;
+#thanksd:visited {
+    text-decoration: none;
+    color:black;
 }
 
-footer {
-  padding: 50px 0 65px;
+
+
+#thanksd:active {
+    text-decoration: none;
+}
+  .panel-heading .accordion-toggle:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    color: grey;
+    cursor: pointer;
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    content: "\e080";
+  cursor: pointer;
+}
+#thanksd{
+  color:black;
+    font-weight:bold;
+    text-align: center;
+    font-family: "Arial Black", Times, serif
+
 }
 
-footer .list-inline {
-  margin: 0;
-  padding: 0;
-}
-
-footer .copyright {
-  font-size: 14px;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.btn {
-  font-size: 14px;
-  font-weight: 800;
-  padding: 15px 25px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-radius: 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-.btn-primary {
-  background-color: #0085A1;
-  border-color: #0085A1;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  color: #fff;
-  background-color: #00657b !important;
-  border-color: #00657b !important;
-}
-
-.btn-lg {
-  font-size: 16px;
-  padding: 25px 35px;
-}
-  /* tell the container's children to float left: */
-.float-my-children > * {
-    float:left;
-    margin-right:5px;
-}
-
-/* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
-
-.clearfix {
-    *zoom:1 /* for IE */
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/* end clearfix*/
-
-
-body{font-size:20px;color:#212529;font-family:Lora,'Times New Roman',serif}p{line-height:1.5;margin:30px 0}p a{text-decoration:underline}h1,h2,h3,h4,h5,h6{font-weight:800;font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif}a{color:#212529;-webkit-transition:all .2s;-moz-transition:all .2s;transition:all .2s}a:focus,a:hover{color:#0085a1}blockquote{font-style:italic;color:#868e96}.section-heading{font-size:36px;font-weight:700;margin-top:60px}.caption{font-size:14px;font-style:italic;display:block;margin:0;padding:10px;text-align:center;border-bottom-right-radius:5px;border-bottom-left-radius:5px}::-moz-selection{color:#fff;background:#0085a1;text-shadow:none}::selection{color:#fff;background:#0085a1;text-shadow:none}img::selection{color:#fff;background:0 0}img::-moz-selection{color:#fff;background:0 0}#mainNav{position:absolute;border-bottom:1px solid #e9ecef;background-color:#fff;font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif}#mainNav .navbar-brand{font-weight:800;color:#343a40}#mainNav .navbar-toggler{font-size:12px;font-weight:800;padding:13px;text-transform:uppercase;color:#343a40}#mainNav .navbar-nav>li.nav-item>a{font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase}@media only screen and (min-width:992px){#mainNav{border-bottom:1px solid transparent;background:0 0}#mainNav .navbar-brand{padding:10px 20px;color:#fff}#mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover{color:rgba(255,255,255,.8)}#mainNav .navbar-nav>li.nav-item>a{padding:10px 20px;color:#fff}#mainNav .navbar-nav>li.nav-item>a:focus,#mainNav .navbar-nav>li.nav-item>a:hover{color:rgba(255,255,255,.8)}}@media only screen and (min-width:992px){#mainNav{-webkit-transition:background-color .2s;-moz-transition:background-color .2s;transition:background-color .2s;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);-webkit-backface-visibility:hidden}#mainNav.is-fixed{position:fixed;top:-67px;-webkit-transition:-webkit-transform .2s;-moz-transition:-moz-transform .2s;transition:transform .2s;border-bottom:1px solid #fff;background-color:rgba(255,255,255,.9)}#mainNav.is-fixed .navbar-brand{color:#212529}#mainNav.is-fixed .navbar-brand:focus,#mainNav.is-fixed .navbar-brand:hover{color:#0085a1}#mainNav.is-fixed .navbar-nav>li.nav-item>a{color:#212529}#mainNav.is-fixed .navbar-nav>li.nav-item>a:focus,#mainNav.is-fixed .navbar-nav>li.nav-item>a:hover{color:#0085a1}#mainNav.is-visible{-webkit-transform:translate3d(0,100%,0);-moz-transform:translate3d(0,100%,0);-ms-transform:translate3d(0,100%,0);-o-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}header.masthead{margin-bottom:50px;background:no-repeat center center;background-color:#868e96;background-attachment:scroll;position:relative;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}header.masthead .overlay{position:absolute;top:0;left:0;height:100%;width:100%;background-color:#212529;opacity:.5}header.masthead .page-heading,header.masthead .post-heading,header.masthead .site-heading{padding:200px 0 150px;color:#fff}@media only screen and (min-width:768px){header.masthead .page-heading,header.masthead .post-heading,header.masthead .site-heading{padding:200px 0}}header.masthead .page-heading,header.masthead .site-heading{text-align:center}header.masthead .page-heading h1,header.masthead .site-heading h1{font-size:50px;margin-top:0}header.masthead .page-heading .subheading,header.masthead .site-heading .subheading{font-size:24px;font-weight:300;line-height:1.1;display:block;margin:10px 0 0;font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif}@media only screen and (min-width:768px){header.masthead .page-heading h1,header.masthead .site-heading h1{font-size:80px}}header.masthead .post-heading h1{font-size:35px}header.masthead .post-heading .meta,header.masthead .post-heading .subheading{line-height:1.1;display:block}header.masthead .post-heading .subheading{font-size:24px;font-weight:600;margin:10px 0 30px;font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif}header.masthead .post-heading .meta{font-size:20px;font-weight:300;font-style:italic;font-family:Lora,'Times New Roman',serif}header.masthead .post-heading .meta a{color:#fff}@media only screen and (min-width:768px){header.masthead .post-heading h1{font-size:55px}header.masthead .post-heading .subheading{font-size:30px}}.post-preview>a{color:#212529}.post-preview>a:focus,.post-preview>a:hover{text-decoration:none;color:#0085a1}.post-preview>a>.post-title{font-size:30px;margin-top:30px;margin-bottom:10px}.post-preview>a>.post-subtitle{font-weight:300;margin:0 0 10px}.post-preview>.post-meta{font-size:18px;font-style:italic;margin-top:0;color:#868e96}.post-preview>.post-meta>a{text-decoration:none;color:#212529}.post-preview>.post-meta>a:focus,.post-preview>.post-meta>a:hover{text-decoration:underline;color:#0085a1}@media only screen and (min-width:768px){.post-preview>a>.post-title{font-size:36px}}.floating-label-form-group{font-size:14px;position:relative;margin-bottom:0;padding-bottom:.5em;border-bottom:1px solid #dee2e6}.floating-label-form-group input,.floating-label-form-group textarea{font-size:1.5em;position:relative;z-index:1;padding:0;resize:none;border:none;border-radius:0;background:0 0;box-shadow:none!important;font-family:Lora,'Times New Roman',serif}.floating-label-form-group input::-webkit-input-placeholder,.floating-label-form-group textarea::-webkit-input-placeholder{color:#868e96;font-family:Lora,'Times New Roman',serif}.floating-label-form-group label{font-size:.85em;line-height:1.764705882em;position:relative;z-index:0;top:2em;display:block;margin:0;-webkit-transition:top .3s ease,opacity .3s ease;-moz-transition:top .3s ease,opacity .3s ease;-ms-transition:top .3s ease,opacity .3s ease;transition:top .3s ease,opacity .3s ease;vertical-align:middle;vertical-align:baseline;opacity:0}.floating-label-form-group .help-block{margin:15px 0}.floating-label-form-group-with-value label{top:0;opacity:1}.floating-label-form-group-with-focus label{color:#0085a1}form .form-group:first-child .floating-label-form-group{border-top:1px solid #dee2e6}footer{padding:50px 0 65px}footer .list-inline{margin:0;padding:0}footer .copyright{font-size:14px;margin-bottom:0;text-align:center}.btn{font-size:14px;font-weight:800;padding:15px 25px;letter-spacing:1px;text-transform:uppercase;border-radius:0;font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif}.btn-primary{background-color:#0085a1;border-color:#0085a1}.btn-primary:active,.btn-primary:focus,.btn-primary:hover{color:#fff;background-color:#00657b!important;border-color:#00657b!important}.btn-lg{font-size:16px;padding:25px 35px}
 </style>
-    <!-- Footer -->
-    <footer>
 
-            <p class="copyright text-muted">Website Made By Cameron Stewart and Christian Ihekweazu</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+		<!-- Bottom Copyright -->
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</html>
+</div>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/clean-blog.min.js"></script>
+<script>
+var myVar;
 
-  </body>
+function myFunction() {
+    myVar = setTimeout(showPage, 1500);
+}
 
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+  document.getElementById("loaderw").style.display = "none";
+}
+</script>
+
+</body>
 </html>

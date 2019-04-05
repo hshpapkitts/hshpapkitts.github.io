@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title> Applications </title>
+        <link rel="icon" href="https://lh3.googleusercontent.com/-T-ouPHSaeWU/Wo4RZJ8AVdI/AAAAAAAAAD4/PfGFXFCYKAQlNQBEPDjI93eOur0xEZG2QCEwYBhgL/w140-h140-p/cca.png" sizes="16x16">
+
+        </head>
+<body>
+    <img class="img-responsive" src="../img/Step_3.jpeg" alt="Application" style="width:49%;height:400px;">
+    <iframe width="49%" height="400" src="https://www.youtube.com/embed/cxbDlDsBv2A">
+</iframe>
+  <h1> Applications </h1>
+    <p>This is a big part of the employment process. This is a chance for employers to see your skills and experiences. To get the most out of your applications, you have to:</p>
+<style>
+h2 {
+text-decoration-color: #cccccc;
+  text-decoration-line: overline;
+font-weight: 600;
+   font-family:Helvetica;
+}
+     .but1{
+         font-size:170%;
+     }
+     p{
+    font-size:150%;
+    }
+body {
+  background-color: #DADADA;
+}
+    #inter{
+    width:22vw;
+    }
+.button5 {background-color: #008CBA;
+  border: none;
+    width: 14vw;
+    color: white;
+    padding: 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: all 0.5s;
+    cursor: pointer;} /* Blue Buttons*/
+    .button5:hover {
+      background-color:#005a77
+    }
+}
+h1{
+  font-size: 200%;
+  text-align: center;
+    font-family:Helvetica;
+}
+   p{font-weight: 500;
+ font-size: 150%;
+  font-family:Helvetica;
+   }
+li{font-weight: 500;
+ font-size: 120%;
+  font-family:Helvetica;
+   }
+body{background-color:F4F4F4;
+}
+   img {
+    border-radius: 10px;
+}
+</style>
+    <style>
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+
+<button class="accordion"><span class="but1">Make sure that your social media is appropriate
+
+</span></button>
+<div class="panel">
+  <p>In an annual study conducted by CareerBuilder found that over 50% of  hiring managers have checked their job candidates’ social media pages. To leave a good first impression on your employer, you should check all of your social media pages to ensure that there is no inappropriate material on the pages. You should also try to post information that might lead your hiring manager to consider you for the job. In the same study conducted by CareerBuilder, It is shown that hiring managers will favor social media accounts that show creativity, good communication skills and  convey a professional image of the candidate.
+
+</p>
+</div>
+
+<button class="accordion"><span class="but1"> Check with the references that you used
+
+
+    </span></button>
+<div class="panel">
+  <p>It is important to check with your references to make sure that they are willing to be a reference. You also need to make sure that their contact information is correct because many employers contact your references immediately to verify them and ask questions about their experience working with you.
+
+</p>
+</div>
+
+    <button class="accordion"><span class="but1">Read over your application
+
+</span>
+</button>
+<div class="panel">
+  <p> Careless mistakes can be fatal to a good job application and they can appear at any point of the application. To avoid these careless mistakes, you should check over your application to check over dates, spelling and other minor details that could mess your application up.
+
+</p>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+</body>
+    <!--Buttons-->
+    <center>
+    <form action="../index2.html" id="index"></form>
+            <form action="page2.html" id="page2"></form>
+    <form action="intermediate.html" id="inter"></form>
+    <form action="page4.html" id="page4"></form>
+
+<button type="submit" class="button button5" form="page2"><span>Previous Step</span></button>
+    <button type="submit" class="button button5" form="index"><span>Home</span></button>
+<button type="submit" class="button button5" id="inter" form="inter"><span>Job Follow Up (Optional)</span></button>
+<button type="submit" class="button button5" form="page4"><span>Next Step</span></button>
+    </center>
+ <!--End Buttons-->
+</html>

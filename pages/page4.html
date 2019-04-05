@@ -1,0 +1,158 @@
+<html>
+  <head>
+ <link rel="icon" href="https://lh3.googleusercontent.com/-T-ouPHSaeWU/Wo4RZJ8AVdI/AAAAAAAAAD4/PfGFXFCYKAQlNQBEPDjI93eOur0xEZG2QCEwYBhgL/w140-h140-p/cca.png" sizes="16x16">
+    <title> Presentations </title>
+  </head>
+  <body>
+   
+      <img class="img-responsive" src="../img/Step_4.jpeg" alt="Presentation" style="width:33%;height:400px;">
+     <iframe width="33%" height="400" src="https://www.youtube.com/embed/EtYIVc1GrEI"></iframe>
+     <iframe width="30%" height="400" src="https://www.youtube.com/embed/krCdiWAnr5k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    
+   <style>
+      .but1{
+         font-size:170%;
+     }
+     p{
+    font-size:150%;
+    }
+h2 {
+text-decoration-color: #cccccc;
+  text-decoration-line: overline;
+font-weight: 600;
+  font-family:Helvetica;
+}
+body {
+  background-color: #DADADA;
+}
+.button5 {background-color: #008CBA;
+  border: none;
+    color: white;
+    padding: 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+     width: 14vw;
+    margin: 4px 2px;
+    transition: all 0.5s;
+    cursor: pointer;
+    } /* Blue Buttons*/
+   
+  .button5:hover {
+      background-color:#005a77
+    }
+h1{
+  font-size: 200%;
+  text-align: center;
+  font-family:Helvetica;
+}
+li{font-weight: 500;
+ font-size: 120%;}
+body{background-color:F4F4F4;
+  font-family:Helvetica;
+}
+  p{
+    font-family:Helvetica;
+  }
+  img {
+    border-radius: 10px;
+}
+</style>
+    <style>
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+    <h1>Interview Presentation</h1>
+<p>The job interview is the most important part of the employment process the job interview shows who you really are and if you are a true fit for the job. There are many ways to approach a job interview and we will show you the best ways to do so. To have a good job interview, you must:</p>
+<button class="accordion"><span class="but1">Be Prepared
+</span></button>
+<div class="panel">
+  <p>When preparing for a job interview, you must prepare items that are crucial for your interview. These items include your resume, a list of references, and a pen and paper to write questions you may have or just to take notes.
+
+</p>
+</div>
+
+<button class="accordion"><span class="but1">Dress appropriately
+
+    </span></button>
+<div class="panel">
+  <p>Your clothes make a big impression onto your employer so you should make sure that your clothes fit well and are free form wrinkles and stains. Make sure that your clothes follow a professional attire even if you are applying to a more casual environment such as a restaurant or store so that your employer knows that you are serious about getting the job. When going for your interview, you should not wear too much jewelry and tie your hair back so that you maintain your professional attire.
+</p>
+</div>
+
+    <button class="accordion"><span class="but1">Arrive on time
+</span>
+</button>
+<div class="panel">
+  <p> Make sure to arrive at least 10 minutes early. This sets a good first impression by showing your employer how organized and serious you are.
+
+</p>
+</div>
+ <button class="accordion"><span class="but1">Have a good posture and handshake
+</span>
+</button>
+<div class="panel">
+  <p> About 33 percent of employers say that they have eliminated candidates after an interview because of bad posture. Make sure that you practice good posture before the interview because it shows confidence. During the interview, you should be mindful of how your posture looks to others. You should also have a strong handshake because a study showed that about 26 percent of employers eliminated candidates because they have a relatively weak handshake.
+
+
+
+</p>
+</div>
+<center>
+<form action="../index2.html" id="index"></form>
+<form action="page3.html" id="page3"></form>
+<form action="page5.html" id="page5"></form>
+<button type="submit" class="button button5"style="vertical-align:middle" form="page3"><span>Previous Step</span></button>
+<button type="submit" class="button button5"style="vertical-align:middle" form="index">Home</button>
+<button type="submit" class="button button5"style="vertical-align:middle" form="page5"><span>Next Step</span></button>
+</center>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+

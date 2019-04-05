@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title> Applications </title>
+        <link rel="icon" href="https://lh3.googleusercontent.com/-T-ouPHSaeWU/Wo4RZJ8AVdI/AAAAAAAAAD4/PfGFXFCYKAQlNQBEPDjI93eOur0xEZG2QCEwYBhgL/w140-h140-p/cca.png" sizes="16x16">
+
+        </head>
+<body>
+    <img class="img-responsive" src="../img/customerservice.jpg" alt="Application" style="width:49%;height:400px;">
+
+</iframe>
+  <h1> Customer Service </h1>
+    <p>Customer Service is very very important to us, so when you contact us by one of the methods below, we will respond as quickly as possible.</p>
+<style>
+h2 {
+text-decoration-color: #cccccc;
+  text-decoration-line: overline;
+font-weight: 600;
+   font-family:Helvetica;
+}
+     .but1{
+         font-size:170%;
+     }
+     p{
+    font-size:150%;
+    }
+body {
+  background-color: #DADADA;
+}
+    #inter{
+    width:22vw;
+    }
+.button5 {background-color: #008CBA;
+  border: none;
+    width: 14vw;
+    color: white;
+    padding: 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: all 0.5s;
+    cursor: pointer;} /* Blue Buttons*/
+    .button5:hover {
+      background-color:#005a77
+    }
+}
+h1{
+  font-size: 200%;
+  text-align: center;
+    font-family:Helvetica;
+}
+   p{font-weight: 500;
+ font-size: 150%;
+  font-family:Helvetica;
+   }
+li{font-weight: 500;
+ font-size: 120%;
+  font-family:Helvetica;
+   }
+body{background-color:F4F4F4;
+}
+   img {
+    border-radius: 10px;
+}
+</style>
+    <style>
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212";
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+
+<h2> Our official phone number is (201)-798-6453 </h2>
+<h2> Our official email is accuracyci@gmail.com </h2>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+</body>
+    <!--Buttons-->
+    <center>
+    <form action="../index.html" id="index"></form>
+            <form action="staff.html" id="page2"></form>
+
+    <form action="mission.html" id="page4"></form>
+
+<button type="submit" class="button button5" form="page2"><span>Staff</span></button>
+    <button type="submit" class="button button5" form="index"><span>Home</span></button>
+
+<button type="submit" class="button button5" form="page4"><span>Mission Statement and Company History</span></button>
+    </center>
+ <!--End Buttons-->
+</html>
